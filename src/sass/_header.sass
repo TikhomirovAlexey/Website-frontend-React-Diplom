@@ -1,0 +1,59 @@
+.header
+    background-color: $site-color-blue
+    background-image: url("../img/header-3_a.jpg")
+    background-position: bottom
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: fixed
+
+.header-top
+    height: 50px
+    margin: 0 30px
+    display: grid
+    grid-template-columns: 1fr 70% 1fr
+    align-items: center
+
+.nav
+    display: flex
+    justify-content: center
+
+.nav__link
+    color: #fff
+    font-size: 1.5vw
+    padding: 10px
+    border-bottom: 2px solid transparent
+    transition: all 0.5s
+
+.nav__link:hover
+    border-color: #fff //TODO: сделать интересное наведение
+
+.phone
+    color: #fff
+    font-size: 1.5vw
+    justify-self: flex-end
+
+.header__info
+    min-height: 80vh
+    display: grid
+    grid-template-rows: repeat(2, 1fr)
+    // display: flex
+    // flex-direction: column
+
+// .header-performance, .header-heading
+//     flex-grow: 1
+
+.header-performance
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: flex-end
+    color: #fff
+    margin-right: 10%
+
+.title-box
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+    margin-left: 50px
+    margin-bottom: 30px
+    color: #fff

@@ -2,6 +2,12 @@
 @import variables
 @import buttonToTop
 @import notFoundPage
+@import header
+@import services
+
+.center-site
+    padding-left: calc( 50% - $site-width / 2)
+    padding-right: calc( 50% - $site-width / 2)
 
 .logo-img
     height: 50px
@@ -12,67 +18,18 @@
 .invisible
     display: none
 
-.header
-    background-color: $site-color-blue
-    background-image: url("../img/header-3_a.jpg")
-    background-position: bottom
-    background-size: cover
-    background-repeat: no-repeat
-    background-attachment: fixed
+.title
+    font-size: 8vw
 
-.header-top
-    height: 50px
-    display: flex
-    justify-content: space-between
-    align-items: center
-    margin: 0 30px
-
-.nav__link
-    color: #fff
-    font-size: 1.5vw
-    padding: 10px
-    transition: all 0.5s
-
-.nav__link:hover
-    border-bottom: 2px solid #fff //TODO: сделать интересное наведение
-
-.phone
-    color: #fff
-    font-size: 1.5vw
-
-.header__info
-    min-height: 80vh
-    display: flex
-    flex-direction: column
-
-.header-performance, .header-heading
-    flex-grow: 1
-
-.header-performance
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: flex-end
-    color: #fff
-    margin-right: 10%
+.heading
+    font-size: 2vw
 
 .subtitle
-    font-size: 48px
+    font-size: 3.5vw
+    text-align: center
 
 .subtitle-size-4
     font-size: 2vw
     font-weight: 300
-
-.title-box
-    display: flex
-    flex-direction: column
-    justify-content: flex-end
-    margin-left: 50px
-    margin-bottom: 30px
-    color: #fff
-
-.heading
-    font-size: 3vw
-
-.title
-    font-size: 9.5vw
+    &_weight-bold
+        font-weight: bold

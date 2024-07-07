@@ -11,8 +11,8 @@
         box-shadow: 0 0 20px #2c2c2c27
 
 .btn-to-top
-    text-decoration: none
     position: fixed
+    z-index: 9999
     right: 30px
     bottom: 50px
     width: 65px
@@ -25,8 +25,10 @@
     opacity: 0.6
     -webkit-animation: btn-up-shadow 2s infinite alternate
     animation: btn-up-shadow 2s infinite alternate
+    transition: opacity 0.3s
     &:hover
         opacity: 1
+        background-color: #fff
 
 .fas-btn-up
     font-size: 24px

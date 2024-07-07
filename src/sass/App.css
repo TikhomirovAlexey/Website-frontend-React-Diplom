@@ -38,8 +38,8 @@ img {
   }
 }
 .btn-to-top {
-  text-decoration: none;
   position: fixed;
+  z-index: 9999;
   right: 30px;
   bottom: 50px;
   width: 65px;
@@ -51,9 +51,11 @@ img {
   background-color: transparent;
   opacity: 0.6;
   animation: btn-up-shadow 2s infinite alternate;
+  transition: opacity 0.3s;
 }
 .btn-to-top:hover {
   opacity: 1;
+  background-color: #fff;
 }
 
 .fas-btn-up {
@@ -86,6 +88,147 @@ img {
   height: 120px;
 }
 
+.header {
+  background-color: #eff2f6;
+  background-image: url("../img/header-3_a.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-top {
+  height: 50px;
+  margin: 0 30px;
+  display: grid;
+  grid-template-columns: 1fr 70% 1fr;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+.nav__link {
+  color: #fff;
+  font-size: 1.5vw;
+  padding: 10px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s;
+}
+
+.nav__link:hover {
+  border-color: #fff;
+}
+
+.phone {
+  color: #fff;
+  font-size: 1.5vw;
+  justify-self: flex-end;
+}
+
+.header__info {
+  min-height: 80vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.header-performance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+  margin-right: 10%;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.services {
+  padding-top: 32px;
+  padding-bottom: 48px;
+  background-color: #eff2f6;
+}
+
+.services-wrapper {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+
+.service-btn {
+  color: #2294c2;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.7s;
+  justify-self: flex-end;
+  align-self: flex-start;
+  transform: translateX(10px);
+}
+
+.service-item {
+  display: grid;
+  width: 100%;
+  grid-template-rows: repeat(4, 1fr) 20px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  padding: 32px;
+  border-radius: 30px;
+  transition: box-shadow 0.7s;
+}
+.service-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.062745098);
+}
+.service-item:hover .service-btn {
+  transform: translateX(-5px);
+  opacity: 1;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.fas-wrapper {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #2294c2;
+  border-radius: 50%;
+}
+
+.fa-img-styles {
+  color: #2294c2;
+  font-size: 24px;
+}
+
+.horizontal-line {
+  background-color: #2294c2;
+  height: 2px;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.center-site {
+  padding-left: calc(50% - 660px);
+  padding-right: calc(50% - 660px);
+}
+
 .logo-img {
   height: 50px;
   opacity: 0.7;
@@ -98,80 +241,23 @@ img {
   display: none;
 }
 
-.header {
-  background-color: #eff2f6;
-  background-image: url("../img/header-3_a.jpg");
-  background-position: bottom;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.title {
+  font-size: 8vw;
 }
 
-.header-top {
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 30px;
-}
-
-.nav__link {
-  color: #fff;
-  font-size: 1.5vw;
-  padding: 10px;
-  transition: all 0.5s;
-}
-
-.nav__link:hover {
-  border-bottom: 2px solid #fff;
-}
-
-.phone {
-  color: #fff;
-  font-size: 1.5vw;
-}
-
-.header__info {
-  min-height: 80vh;
-  display: flex;
-  flex-direction: column;
-}
-
-.header-performance, .header-heading {
-  flex-grow: 1;
-}
-
-.header-performance {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  color: #fff;
-  margin-right: 10%;
+.heading {
+  font-size: 2vw;
 }
 
 .subtitle {
-  font-size: 48px;
+  font-size: 3.5vw;
+  text-align: center;
 }
 
 .subtitle-size-4 {
   font-size: 2vw;
   font-weight: 300;
 }
-
-.title-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-left: 50px;
-  margin-bottom: 30px;
-  color: #fff;
-}
-
-.heading {
-  font-size: 3vw;
-}
-
-.title {
-  font-size: 9.5vw;
+.subtitle-size-4_weight-bold {
+  font-weight: bold;
 }/*# sourceMappingURL=App.css.map */

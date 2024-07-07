@@ -1,0 +1,61 @@
+.services
+    padding-top: 32px
+    padding-bottom: 48px
+    background-color: $site-color-blue
+
+.services-wrapper
+    margin-top: 24px
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    justify-content: center
+    align-items: center
+
+.service-btn
+    color: $site-color-items
+    font-size: 20px
+    opacity: 0
+    transition: all 0.7s
+    justify-self: flex-end
+    align-self: flex-start
+    transform: translateX(10px)
+
+.service-item
+    display: grid
+    width: 100%
+    grid-template-rows: repeat(4, 1fr) 20px
+    text-align: center
+    align-items: center
+    justify-items: center
+    padding: 32px
+    border-radius: 30px
+    transition: box-shadow 0.7s
+    &:hover
+        box-shadow: 0 0 10px #00000010
+    &:hover .service-btn
+        transform: translateX(-5px)
+        opacity: 1
+
+.description
+    font-size: 24px
+    font-weight: 700
+
+.fas-wrapper
+    width: 65px
+    height: 65px
+    display: flex
+    justify-content: center
+    align-items: center
+    border: 2px solid $site-color-items
+    border-radius: 50%
+
+.fa-img-styles
+    color: $site-color-items
+    font-size: 24px
+
+.horizontal-line
+    background-color: $site-color-items
+    height: 2px
+    width: 30%
+    display: flex
+    align-items: center
+    justify-content: center
