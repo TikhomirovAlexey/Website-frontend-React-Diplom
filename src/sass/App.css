@@ -28,4 +28,150 @@ a {
 img {
   max-width: 100%;
   display: block;
+}
+@keyframes btn-up-shadow {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(44, 44, 44, 0.1529411765);
+  }
+}
+.btn-to-top {
+  text-decoration: none;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0.6;
+  animation: btn-up-shadow 2s infinite alternate;
+}
+.btn-to-top:hover {
+  opacity: 1;
+}
+
+.fas-btn-up {
+  font-size: 24px;
+  color: #2294c2;
+}
+
+.not-found-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.not-found-header {
+  font-size: 60px;
+}
+
+.not-found-wrapper {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.not-found-text {
+  font-size: 120px;
+}
+
+.not-found-img {
+  height: 120px;
+}
+
+.logo-img {
+  height: 50px;
+  opacity: 0.7;
+}
+.logo-img_margin-top {
+  margin-top: 20px;
+}
+
+.invisible {
+  display: none;
+}
+
+.header {
+  background-color: #eff2f6;
+  background-image: url("../img/header-3_a.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-top {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+}
+
+.nav__link {
+  color: #fff;
+  font-size: 1.5vw;
+  padding: 10px;
+  transition: all 0.5s;
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid #fff;
+}
+
+.phone {
+  color: #fff;
+  font-size: 1.5vw;
+}
+
+.header__info {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header-performance, .header-heading {
+  flex-grow: 1;
+}
+
+.header-performance {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  color: #fff;
+  margin-right: 10%;
+}
+
+.subtitle {
+  font-size: 48px;
+}
+
+.subtitle-size-4 {
+  font-size: 2vw;
+  font-weight: 300;
+}
+
+.title-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.heading {
+  font-size: 3vw;
+}
+
+.title {
+  font-size: 9.5vw;
 }/*# sourceMappingURL=App.css.map */
