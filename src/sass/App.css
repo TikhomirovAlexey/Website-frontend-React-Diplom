@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  cursor: default;
 }
 
 *,
@@ -23,6 +24,7 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 img {
@@ -311,6 +313,41 @@ img {
   gap: 12px;
 }
 
+.footer {
+  background-color: #7c7b7b;
+}
+.footer__box {
+  height: 300px;
+  display: flex;
+}
+.footer__info {
+  width: 50%;
+  padding: 15px;
+  color: #fff;
+}
+.footer__list {
+  font-size: 22px;
+  padding-left: 35px;
+}
+.footer__list > li {
+  margin-top: 20px;
+}
+.footer__map {
+  width: 50%;
+  margin: auto;
+}
+
+.author {
+  background-color: #000;
+}
+.author__box {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.6039215686);
+}
+
 .center-site {
   padding-left: calc(50% - 660px);
   padding-right: calc(50% - 660px);
@@ -339,6 +376,9 @@ img {
 .subtitle {
   font-size: 3.5vw;
   text-align: center;
+}
+.subtitle__t-align-left {
+  text-align: left;
 }
 
 .subtitle-size-4 {

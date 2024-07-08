@@ -30,7 +30,7 @@ function Performance() {
                 </div>
                 <div className="vertical-line"></div>
                 <div className="performance__item">
-                    <div className="fas-wrapper"> 
+                    <div className="fas-wrapper">
                         <i className="fa-solid fa-thumbs-up fa-img-styles"></i>
                     </div>
                     <ul className="performance__list">

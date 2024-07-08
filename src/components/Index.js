@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 import ForChildren from "./ForChildren";
 import Header from "./Header";
 import Performance from "./Performance";
@@ -10,6 +11,7 @@ function Index() {
             <Services />
             <ForChildren />
             <Performance />
+            <Footer />
         </>
     );
 }
