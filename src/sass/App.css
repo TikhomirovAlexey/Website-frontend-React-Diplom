@@ -153,7 +153,7 @@ img {
 }
 
 .services {
-  padding-top: 32px;
+  padding-top: 48px;
   padding-bottom: 48px;
   background-color: #eff2f6;
 }
@@ -175,6 +175,9 @@ img {
   align-self: flex-start;
   transform: translateX(10px);
 }
+.service-btn__opacity-1 {
+  opacity: 1;
+}
 
 .service-item {
   display: grid;
@@ -195,11 +198,6 @@ img {
   opacity: 1;
 }
 
-.description {
-  font-size: 24px;
-  font-weight: 700;
-}
-
 .fas-wrapper {
   width: 65px;
   height: 65px;
@@ -215,13 +213,102 @@ img {
   font-size: 24px;
 }
 
-.horizontal-line {
-  background-color: #2294c2;
-  height: 2px;
-  width: 30%;
+.service-item-info {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+.service-btn-back {
+  color: #2294c2;
+  font-size: 20px;
+}
+
+.for-children {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.for-children__card-box {
+  display: grid;
+  grid-template-columns: repeat(3, 25%);
+  gap: 4% 2%;
   justify-content: center;
+  margin-top: 48px;
+}
+
+.for-children__link {
+  height: 200px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  color: #fff;
+  text-align: center;
+  transition: all 0.5s;
+}
+.for-children__link:hover {
+  background-size: 110%;
+}
+.for-children__link_for-children-fight {
+  background-image: url(../img/ARB-1.jpg);
+  background-position: top;
+}
+.for-children__link_for-children-karate {
+  background-image: url(../img/karate-1.jpg);
+}
+.for-children__link_for-children-swim {
+  background-image: url(../img/swimming.jpg);
+}
+.for-children__link_for-children-football {
+  background-image: url(../img/football.jpg);
+}
+.for-children__link_for-children-tennis {
+  background-position: top;
+  background-image: url(../img/tennis.jpg);
+}
+.for-children__link_for-children-ping-pong {
+  background-image: url(../img/ping-pong.jpg);
+}
+
+.performance {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding-top: 48px;
+  padding-bottom: 68px;
+}
+.performance__box {
+  height: 500px;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+}
+.performance__item {
+  width: 33%;
+  display: grid;
+  grid-template-rows: 20% 60% 20%;
+  justify-items: center;
+  align-items: center;
+  padding: 48px 12px;
+}
+.performance__list {
+  text-align: center;
+  font-size: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
 }
 
 .center-site {
@@ -260,4 +347,31 @@ img {
 }
 .subtitle-size-4_weight-bold {
   font-weight: bold;
+}
+.subtitle-size-4_font-size-1 {
+  font-size: 1.5vw;
+}
+
+.description {
+  font-size: 24px;
+  font-weight: 700;
+}
+.description_weigth-300 {
+  font-weight: 300;
+}
+
+.horizontal-line {
+  background-color: #2294c2;
+  height: 2px;
+  width: 30%;
+}
+.horizontal-line_white {
+  background-color: #fff;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 80%;
+  background-color: #d6d6d6;
+  align-self: center;
 }/*# sourceMappingURL=App.css.map */

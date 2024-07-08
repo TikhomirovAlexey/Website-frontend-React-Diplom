@@ -1,0 +1,40 @@
+.for-children
+    padding-top: 48px
+    padding-bottom: 48px
+    
+.for-children__card-box
+    display: grid
+    grid-template-columns: repeat(3, 25%)
+    gap: 4% 2%
+    justify-content: center
+    margin-top: 48px
+
+.for-children__link
+    height: 200px
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    gap: 12px
+    color: #fff
+    text-align: center
+    transition: all 0.5s
+    &:hover
+        background-size: 110%
+    &_for-children-fight
+        background-image: url(../img/ARB-1.jpg)
+        background-position: top
+    &_for-children-karate
+        background-image: url(../img/karate-1.jpg)
+    &_for-children-swim
+        background-image: url(../img/swimming.jpg)
+    &_for-children-football
+        background-image: url(../img/football.jpg)
+    &_for-children-tennis
+        background-position: top
+        background-image: url(../img/tennis.jpg)
+    &_for-children-ping-pong
+        background-image: url(../img/ping-pong.jpg)
