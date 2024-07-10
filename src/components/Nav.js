@@ -6,8 +6,7 @@ function Nav() {
         <nav className="nav">
             <Link className="nav__link" to="/">Главная</Link>
             <Link className="nav__link" to="/news">Новости</Link>
-            <Link className="nav__link" to="/">Доска почета</Link>
-            <Link className="nav__link" to="/">Галерея</Link>
+            <Link className="nav__link" to="/honorBoard">Доска почета</Link>
             <a className="nav__link" href="#footerId">О нас</a>
         </nav>
     );
