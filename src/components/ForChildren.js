@@ -36,12 +36,12 @@ const forChildrenInfo = [
 
 function ForChildren() {
     return (
-        <section className="for-children center-site">
+        <section className="for-children center-site" id="forChildrenId">
             <h3 className="subtitle">Секции для детей</h3>
             <div className="for-children__card-box">
                 {
                     forChildrenInfo.map(el => (
-                        <Link className={"for-children__link for-children__link_" + el.id} to="/" key={el.id}>
+                        <Link className={"for-children__link for-children__link_" + el.id} to={`/pages/${el.id}`} key={el.id}>
                             <h4 className="subtitle-size-4 subtitle-size-4_weight-bold subtitle-size-4_font-size-1">{el.heading}</h4>
                             <div className="horizontal-line horizontal-line_white"></div>
                             <p className="description description_weigth-300">{el.description}</p>

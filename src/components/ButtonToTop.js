@@ -18,7 +18,7 @@ function ButtonToTop() {
 
 
     return (
-        <button className={scroll < 400 ? 'btn-to-top invisible' : 'btn-to-top'} onClick={handleUpButton}><i className="fa-solid fa-arrow-up fas-btn-up"></i></button>
+        <button className={scroll < 400 ? 'btn-to-top invisible' : 'btn-to-top'} onClick={handleUpButton}><i className="fa-solid fa-arrow-up fas-btn-up cursor-pointer"></i></button>
     );
 }
 

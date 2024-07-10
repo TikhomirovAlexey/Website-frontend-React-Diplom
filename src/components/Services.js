@@ -217,7 +217,7 @@ function Services() {
     if (infoFlag === 'info') {
         const item = servicesInfo.find(el => el.id === idItem);
         return (
-            <section className="services center-site">
+            <section className="services center-site" id='serviseId'>
                 <h3 className="subtitle">Твое время, твой выбор!</h3>
                 <div className="service-item-info">
                     <h3 className="subtitle">{item.heading}</h3>
@@ -227,7 +227,7 @@ function Services() {
                                 {el.title}
                             </h4>
                             <p className="description">{el.description}</p>
-                            
+
                         </>
                     ))}
                     <button onClick={infoNotDisplay} className="service-btn-back">Назад</button>
@@ -239,7 +239,7 @@ function Services() {
 
     if (infoFlag === 'notInfo') {
         return (
-            <section className="services center-site">
+            <section className="services center-site" id='serviseId'>
                 <h3 className="subtitle">Твое время, твой выбор!</h3>
                 <div className="services-wrapper">
                     {arrayServises.map(item => (
@@ -251,7 +251,7 @@ function Services() {
                             <p className="description">{item.textInfo}</p>
                             <div className="horizontal-line">
                             </div>
-                            <button onClick={infoDisplay}  className="service-btn">Подробнее...</button>
+                            <button onClick={infoDisplay} className="service-btn">Подробнее...</button>
                         </article>
                     ))}
                 </div>

@@ -2,7 +2,7 @@ import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
 
 function Footer() {
     return (
-        <footer className="footer">
+        <footer className="footer" id='footerId'>
             <div className="footer__box center-site">
                 <div className="footer__info">
                     <h3 className="subtitle subtitle__t-align-left">О нас:</h3>

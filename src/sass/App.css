@@ -348,6 +348,105 @@ img {
   color: rgba(255, 255, 255, 0.6039215686);
 }
 
+.pages-header {
+  background-color: #eff2f6;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+.pages-header__heading-wrapper {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pages-header_for-children-fight {
+  background-image: url("../img/mma-header-1.jpg");
+}
+.pages-header_for-children-karate {
+  background-image: url("../img/karate-header-1.jpg");
+}
+.pages-header_for-children-swim {
+  background-image: url("../img/pool_header-1.jpg");
+}
+.pages-header_for-children-football {
+  background-image: url("../img/football-header-1.jpg");
+}
+.pages-header_for-children-tennis {
+  background-image: url("../img/tennis-header.jpg");
+}
+.pages-header_for-children-ping-pong {
+  background-image: url("../img/ping-pong-header-1.jpg");
+}
+
+.pages-heading {
+  font-size: 7vw;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.coaches {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.coaches-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin: 24px;
+}
+
+.coach-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coach-photo {
+  height: 350px;
+}
+
+.info-about-training {
+  padding: 48px 0;
+  background-color: #eff2f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.info-about-training__wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.info-about-training__card {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  text-align: center;
+}
+.info-about-training__card_table {
+  width: 100%;
+}
+.info-about-training__table {
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+.info-about-training__table td, .info-about-training__table th {
+  border: 1px solid #000;
+  padding: 5px;
+  font-size: 22px;
+}
+
 .center-site {
   padding-left: calc(50% - 660px);
   padding-right: calc(50% - 660px);
@@ -414,4 +513,8 @@ img {
   height: 80%;
   background-color: #d6d6d6;
   align-self: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }/*# sourceMappingURL=App.css.map */
