@@ -291,7 +291,7 @@ function ForChildrenPages() {
                 </div>
             </section>
             <section className="info-about-training center-site">
-                <h3 className="subtitle">Информация о тренировке</h3>
+                <h3 className="subtitle">Информация о занятиях</h3>
                 <div className="info-about-training__box">
                     <div className="info-about-training__wrapper">
                         {

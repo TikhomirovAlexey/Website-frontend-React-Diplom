@@ -1,7 +1,6 @@
 * {
   margin: 0;
   padding: 0;
-  cursor: default;
 }
 
 *,
@@ -382,6 +381,9 @@ img {
 .pages-header_for-children-ping-pong {
   background-image: url("../img/ping-pong-header-1.jpg");
 }
+.pages-header_news {
+  background-image: url("../img/news.jpg");
+}
 
 .pages-heading {
   font-size: 7vw;
@@ -445,6 +447,35 @@ img {
   border: 1px solid #000;
   padding: 5px;
   font-size: 22px;
+}
+
+.news {
+  padding: 64px 0;
+}
+
+.news-box {
+  display: flex;
+  margin-top: 64px;
+}
+
+.news-buttons {
+  min-height: 100vh;
+  padding: 12px;
+  border-right: 1px solid #8d8d8d;
+}
+
+.news-btn {
+  padding: 12px 0;
+  display: flex;
+  width: 350px;
+  cursor: pointer;
+}
+.news-btn:hover {
+  color: #8e909c;
+}
+
+.news-item {
+  padding-left: 24px;
 }
 
 .center-site {
